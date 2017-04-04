@@ -5,26 +5,42 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>Movie Tickets</title>
   </head>
   <body>
     <div class="container">
       <h1>Get Movie tickets!</h1>
 
-      <form id="new-contact">
-           <div class="form-group">
-             <label for="movie-type">Select movie:</label>
-             <input type="text" class="form-control" id="movie-type">
-           </div>
+      <form id="new-movie">
+        <select class="form-control" id="movie-title">
+          <option></option>
+          <option value="Dino">Dinosaurs Reborn</option>
+          <option value="Land">Land before never time</option>
+          <option value="Spider">Spider attack 3D</option>
+          <option value="Perks">Perks of coding</option>
+        </select>
            <div class="form-group">
              <label for="age-type">Enter age</label>
              <input type="text" class="form-control" id="age-type">
            </div>
-           <div class="form-group">
-             <label for="movie-time">Movie time:</label>
-             <input type="text" class="form-control" id="movie-time">
+           <select class="form-control" id="movie-time">
+             <option value="12pm">12pm</option>
+             <option value="3pm">3pm</option>
+             <option value="5pm">5pm</option>
+             <option value="9pm">9pm</option>
+             <option value="10pm">10pm</option>
+           </select>
+           <div id="result">
+             <p>
+               Your total cost for the ticket is $ <span id="total"><ul></ul></span>
+             </p>
            </div>
 
+
+
            <button type="submit" class="btn">Click for ticket</button>
+       </form>
+     </div>
+   </body>
 
 </html>
